@@ -18,7 +18,7 @@ export default class App extends Component {
         <div>
           <Navbar />
           <Routes>
-            <Route exact path="/" element={<News key="general" pageSize={6} category="general" country="in" />} />
+            <Route exact path="//NewsMonkey_ReactJs" element={<News key="general" pageSize={6} category="general" country="in" />} />
             <Route exact path="/business" element={<News key="business" pageSize={6} category="business" country="in" />} />
             <Route exact path="/entertainment" element={<News key="entertainment" pageSize={6} category="entertainment" country="in" />} />
             <Route exact path="/general" element={<News key="general" pageSize={6} category="general" country="in" />} />
