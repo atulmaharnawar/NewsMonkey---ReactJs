@@ -74,7 +74,8 @@ export class News extends Component {
                 <h2 className='text-center'>NewsMonkey - Top Headlines</h2>
                 {this.state.loading && <Spinner />}
                 <div className="row">
-                    {!this.state.loading && this.state.articles.map((element) => {
+                    {/* {!this.state.loading && this.state.articles.map((element) => { */}
+                    {this.state.articles.map((element) => {
                         return <div key={element.url} className="col-md-4">
                             <NewsItem title={element.title /*? element.title.slice(0, 45) : ""*/} description={element.description /*? element.description.slice(0, 60) : ""*/} imageUrl={element.urlToImage} newsUrl={element.url} date={element.publishedAt} />
                         </div>
